@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Shop</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hola Mac Shop</h1>
+      <div>
+        <button class="filter selected" data-filter="all">All</button>
+        <button class="filter" data-filter="tech">Tech</button>
+        <button class="filter" data-filter="clothing">Clothing</button>
+        <button class="filter" data-filter="health">Health</button>
+      </div>
+    </header>
+    <main>
+      <div id="search">
+        <input
+          type="text"
+          name=""
+          id="search-input"
+          placeholder="search by name"
+        />
+        <div id="search-price">
+          <input type="number" placeholder="search price" />
+          <button>Search</button>
+        </div>
+      </div>
+      <div id="products">
+        <div class="products-item" data-category="tech">
+          <img src="./css/img/iphone.png" alt="" />
+          <p>Apple iphone 14 pro</p>
+          <span>$ 1499</span>
+        </div>
+        <div class="products-item" data-category="clothing">
+          <img src="./css/img/shoes.png" alt="" />
+          <p>Nike Shoes</p>
+          <span>$ 299</span>
+        </div>
+        <div class="products-item" data-category="tech">
+          <img src="./css/img/airpods.png" alt="" />
+          <p>Air pods pro</p>
+          <span>$ 395</span>
+        </div>
+        <div class="products-item" data-category="tech">
+          <img src="./css/img/watch.png" alt="" />
+          <p>Apple Watch 5</p>
+          <span>$ 700</span>
+        </div>
+        <div class="products-item" data-category="health">
+          <img src="./css/img/shampoo.png" alt="" />
+          <p>Keratin Shampoo</p>
+          <span>$ 80</span>
+        </div>
+        <div class="products-item" data-category="health">
+          <img src="./css/img/vitamin.png" alt="" />
+          <p>Natures Own Vitamin</p>
+          <span>$ 14</span>
+        </div>
+        <div class="products-item" data-category="clothing">
+          <img src="./css/img/bag.png" alt="" />
+          <p>Kanken Bag</p>
+          <span>$ 99</span>
+        </div>
+        <div class="products-item" data-category="health">
+          <img src="./css/img/cream.png" alt="" />
+          <p>Balancing Face Cream</p>
+          <span>$ 10</span>
+        </div>
+        <div class="products-item" data-category="clothing">
+          <img src="./css/img/jacket.png" alt="" />
+          <p>North Face Jacket</p>
+          <span>$ 165</span>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
