@@ -21,7 +21,6 @@ const changeClass = (filter) => {
 const searchHandler = (event) => {
     //get input value for item search
     const searchValue = event.target.value.toLowerCase().trim();
-
     products.forEach(product => {
         //get items description values as name 
         const productName = product.children[1].innerText.toLowerCase();
@@ -39,10 +38,8 @@ const searchHandler = (event) => {
 const filterHandler = (event) => {
     const filter = event.target.dataset.filter;
     changeClass(filter)
-
     products.forEach(product => {
         const category = product.dataset.category
-
         if (filter === "all") {
             product.style.display = 'block';
         } else {
@@ -50,7 +47,6 @@ const filterHandler = (event) => {
             filter === category
                 ? (product.style.display = 'block')
                 : (product.style.display = 'none');
-
             // if (filter === category) {
             //     product.style.display = 'block';
             // } else {
